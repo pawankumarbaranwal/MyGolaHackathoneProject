@@ -33,6 +33,10 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Cu
     public void onBindViewHolder(CustomViewHolder customViewHolder, int i) {
         Room feedItem = roomList.get(i);
         //Setting text view title
+        if(i==0)
+        customViewHolder.imageView.setImageResource(R.drawable.room1);
+        else
+            customViewHolder.imageView.setImageResource(R.drawable.room2);
         customViewHolder.textView.setText(feedItem.getTitle());
         customViewHolder.price.setText(String.valueOf(feedItem.getPrice()));
     }

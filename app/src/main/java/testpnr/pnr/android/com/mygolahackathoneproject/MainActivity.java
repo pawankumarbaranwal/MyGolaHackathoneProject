@@ -57,19 +57,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initialize();
-        cardView = (CardView)findViewById(R.id.cv);
+        cardView = (CardView) findViewById(R.id.cv);
         cardView.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.cv:
                 Intent intent = new Intent(this, Show360.class);
                 intent.putExtra("hotelId", 1);
                 startActivity(intent);
-            break;
+                break;
+            case R.id.upload:
+                intent = new Intent(this, Upload.class);
+                intent.putExtra("hotelId", 1);
+                startActivity(intent);
+                break;
         }
     }
 }
