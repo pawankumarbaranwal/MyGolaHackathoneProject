@@ -18,8 +18,11 @@
         </activity>
         <activity android:name=".Show360">
         </activity>
+        <activity android:name=".Upload">
+        </activity>
 
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>
