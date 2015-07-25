@@ -39,9 +39,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         room1.setTitle("Classic Room");
 
         Room room2 = new Room();
-        room1.setPrice(2000);
-        room1.setThumbnail("room2");
-        room1.setTitle("Premium Room");
+        room2.setPrice(2000);
+        room2.setThumbnail("room2");
+        room2.setTitle("Premium Room");
 
         roomsList.add(room1);
         roomsList.add(room2);
