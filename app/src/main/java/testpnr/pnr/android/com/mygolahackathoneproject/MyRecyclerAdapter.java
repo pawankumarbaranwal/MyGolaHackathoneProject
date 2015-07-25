@@ -3,6 +3,7 @@ package testpnr.pnr.android.com.mygolahackathoneproject;
 /**
  * Created by bhargavsarvepalli on 26/07/15.
  */
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.util.List;
 
 public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.CustomViewHolder> {
@@ -33,8 +35,8 @@ public class MyRecyclerAdapter extends RecyclerView.Adapter<MyRecyclerAdapter.Cu
     public void onBindViewHolder(CustomViewHolder customViewHolder, int i) {
         Room feedItem = roomList.get(i);
         //Setting text view title
-        if(i==0)
-        customViewHolder.imageView.setImageResource(R.drawable.room1);
+        if (i == 0)
+            customViewHolder.imageView.setImageResource(R.drawable.room1);
         else
             customViewHolder.imageView.setImageResource(R.drawable.room2);
         customViewHolder.textView.setText(feedItem.getTitle());

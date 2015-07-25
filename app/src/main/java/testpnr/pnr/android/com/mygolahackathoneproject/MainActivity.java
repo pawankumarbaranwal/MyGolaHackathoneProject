@@ -7,6 +7,7 @@ import android.support.v7.widget.CardView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,6 +60,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initialize();
         cardView = (CardView) findViewById(R.id.cv);
         cardView.setOnClickListener(this);
+        Button button = (Button) findViewById(R.id.upload);
+        button.setOnClickListener(this);
 
     }
 
